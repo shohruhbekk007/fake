@@ -1,4 +1,4 @@
-#!/home/kali/Documents/papka/venv/bin/python
+#!/home/kali/Desktop/toshkent/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
