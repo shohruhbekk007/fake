@@ -2,7 +2,6 @@ from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
 
 
-
 class Product(models.Model):
     cotegory = models.CharField(max_length=255)
     buyurtmalar = models.TextField()

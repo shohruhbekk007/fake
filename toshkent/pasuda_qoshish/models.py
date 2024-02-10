@@ -1,4 +1,6 @@
 from django.db import models
+from sahifa.models import Toifalash1
+
 
 class Toifalash(models.Model):
     nomi = models.CharField(max_length=100)
@@ -13,6 +15,7 @@ class maxsulot_qoshish(models.Model):
     Rasm = models.ImageField(upload_to="photos/%Y/%m/%d/", null=True, blank=True)
     narxi = models.IntegerField()
     toifasi = models.ForeignKey(Toifalash, on_delete=models.CASCADE, null=True)
+    category = models.ForeignKey(Toifalash1, on_delete=models.CASCADE, blank=True, null=True)
 
     def __str__(self):
         return self.nomi
